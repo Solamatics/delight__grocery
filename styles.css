@@ -29,6 +29,10 @@ html {
     scroll-padding-top: 7rem;
 }
 
+section {
+    padding: 2rem 9%;
+}
+
 body {
     background: #eee;
 }
@@ -267,6 +271,36 @@ body {
     text-decoration: underline;
 }
 
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(assets/banner-bg.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 17rem 0 17rem 0;
+}
+
+.home .content {
+    text-align: center;
+    width: 60rem;
+}
+
+.home h3 {
+    color: var(--black);
+    font-size: 3rem;
+}
+
+.home span {
+    color: var(--orange);
+}
+
+.home p {
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
 
 /*=======
     media queries
@@ -279,9 +313,13 @@ body {
     .header {
         padding: 2rem;
     }
+    
+    section {
+        padding: 2rem;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     #menu__btn {
         display: inline-block;
     }
