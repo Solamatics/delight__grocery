@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delight Grocery</title>
+    <!--fonteawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--Custom styles-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <!--Header Section-->
+   <header class="header">
+       <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>delight</a>
+       <nav class="navbar">
+           <a href="#home">Home</a>
+           <a href="#features">Features</a>
+           <a href="#products">Products</a>
+           <a href="#categories">Categories</a>
+           <a href="#reviews">Reviews</a>
+           <a href="#blogs">Blogs</a>
+       </nav>
+
+       <div class="icons">
+           <div class="fas fa-bars" id="menu__btn"></div>
+           <div class="fas fa-search" id="search__btn"></div>
+           <div class="fas fa-shopping-cart" id="cart__btn"></div>
+           <div class="fas fa-user" id="login__btn"></div>
+       </div>
+
+       <form action="" class="search__form">
+           <input type="search" id="search__box" placeholder="search here...">
+           <label for="search__box" class="fas fa-search"></label>
+       </form>
+
+       <div class="shopping__cart">
+           <div class="box">
+               <i class="fas fa-trash"></i>
+               <img src="assets/cart-img-1.png" alt="">
+               <div class="content">
+                   <h3>watermelon</h3>
+                   <span class="price">$4.99/-</span>
+                   <span class="quantity">qty: 1</span>
+               </div>
+           </div>
+           <div class="box">
+               <i class="fas fa-trash"></i>
+               <img src="assets/cart-img-2.png" alt="">
+               <div class="content">
+                   <h3>onion</h3>
+                   <span class="price">$5.99/-</span>
+                   <span class="quantity">qty: 2</span>
+               </div>
+           </div>
+           <div class="box">
+               <i class="fas fa-trash"></i>
+               <img src="assets/cart-img-3.png" alt="cart">
+               <div class="content">
+                   <h3>chicken</h3>
+                   <span class="price">$4.99/-</span>
+                   <span class="quantity">qty: 1</span>
+               </div>
+           </div>
+           <div class="total">total</div>
+       </div>
+   </header>
+    <!--End of Header Section-->
+    <!--javascript link-->
+    <script src="index.js"></script>
+</body>
+</html>
