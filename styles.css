@@ -282,12 +282,33 @@ body {
 }
 
 @media (max-width: 768px) {
+    #menu__btn {
+        display: inline-block;
+    }
+
     .navbar {
         position: absolute;
         top: 110%;
-        right: 2rem;
+        right: -110%;
         width: 30rem;
         box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+
+    .search__form {
+        width: 90%;
+    }
+
+    .navbar a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .navbar.show {
+        right: 2rem;
+        transition: .3s linear;
     }
 }
 
