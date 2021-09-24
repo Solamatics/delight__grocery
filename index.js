@@ -48,8 +48,31 @@ window.onscroll = () => {
 }
 
 
-//Slider 
+//Product Slider 
 var swiper = new Swiper(".product__slider", {
+        loop: true,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 6000,
+            disableInteraction: false,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      }
+    );
+    
+
+    //Review Slider
+    var swiper = new Swiper(".review__slider", {
         loop: true,
         spaceBetween: 20,
         autoplay: {
