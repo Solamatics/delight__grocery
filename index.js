@@ -46,3 +46,26 @@ window.onscroll = () => {
     navBar.classList.remove('show');
     loginForm.classList.remove('show');
 }
+
+
+//Slider 
+var swiper = new Swiper(".product__slider", {
+        loop: true,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 6000,
+            disableInteraction: false,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      }
+    );
